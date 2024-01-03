@@ -1,35 +1,48 @@
 
 export default function Login() {
+
     // function submit() {
     //     return(
     //         console.log("you have submit")
     //     )
     // }
-    return(
-        <div>
-            <h3 className="text-white-700" >sign up</h3>
-            <form>
-                <input type="text" name="full name" className="border-dotted border-2 border-sky-500 text-black" />
-                <input type="email" className="" />
-                <input type="password" className="" />
-                <input type="" className="" />
+
+    return (
+        <div className="capitalize container grid justify-items-center gap-4">
+            <div className="navigationArrow">
+                {/* Back Arrow  */}
+            </div>
+            <h3 className=" text-blue-400 hover:text-lime-600 text-left" >
+                login
+            </h3>
+            <form className="flex-col flex gap-3">
+                <input type="email" className="" placeholder="email"/>
+                <input type="password" className="" placeholder="password"/>
             </form>
             <div>
                 <span>
-                    Already have an account //arrow
+                    foeget your password // arrow
                 </span>
             </div>
-
+                <button className="border border-3 border-solid">
+                    Submit
+                </button>
             <div>
-                <button className="">sign up</button>
+                <button className="cursor-pointer 
+                w-96 border border-3 
+                bg-pink-800 
+                text-white rounded-lg">sign up</button>
             </div>
             <div>
-                <small>or sign up with social account</small>
-                <div>
-                    <button className="" type="button">Google</button>
-                    <button className="">Facebook</button>
+                <small>or login with social account</small>
+                <div className="flex ">
+                    <button className="m-4 p-3 cursor-pointer border" type="button">Google</button>
+                    <button className="m-4 p-3 cursor-pointer border">Facebook</button>
                 </div>
             </div>
-      </div>
+            <div>
+  
+            </div>
+        </div>
     )
 }
